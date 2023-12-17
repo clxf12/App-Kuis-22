@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@drawable/bg"
+    tools:context=".DaftarActivity">
+
+    <ImageView
+        android:layout_width="118dp"
+        android:layout_height="124dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/simbol"
+        android:id="@+id/log1daf"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/txt_score"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/log1daf"
+        android:layout_marginTop="20dp"
+        android:id="@+id/dafscore" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/kol_b"
+        android:layout_below="@id/dafscore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/passtxt2"/>
+
+    <TextView
+        android:id="@+id/hasil_score"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="100"
+        android:layout_below="@id/dafscore"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Benar:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/hasil_score"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-15dp"
+        android:id="@+id/score_benar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Salah:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/score_benar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/score_salah"/>
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kol_s"
+        android:layout_marginTop="-3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/soal_baru"/>
+
+    <TextView
+        android:id="@+id/bckdaftxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-45dp"
+        android:fontFamily="@font/modak"
+        android:text="Soal Baru"
+        android:textColor="@color/liteblack"
+        android:textSize="26sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/passtxt1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/kol_seb"
+            android:layout_width="166dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="490dp"
+            android:src="@drawable/kol_s" />
+
+        <TextView
+            android:id="@+id/bckdafscr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="493dp"
+            android:fontFamily="@font/modak"
+            android:text="Sebelumnya"
+            android:textColor="@color/liteblack"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/kol_k"
+            android:layout_width="166dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="206dp"
+            android:layout_marginTop="490dp"
+            android:src="@drawable/kol_s" />
+
+        <TextView
+            android:id="@+id/tsvdafxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="493dp"
+            android:fontFamily="@font/modak"
+            android:textColor="@color/liteblack"
+            android:text="Keluar"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/x"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/btn_shape"
+            android:backgroundTint="@color/transparent" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

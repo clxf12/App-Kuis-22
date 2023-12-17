@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".X">
+
+
+    <ImageView
+        android:id="@+id/dpC"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:src="@drawable/p2" />
+
+    <ImageView
+        android:id="@+id/dpF"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="515dp"
+        android:src="@drawable/p1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/f1"
+        android:fontFamily="@font/modak"
+        android:textColor="@color/liteblack"
+        android:text="DEV"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/f2"
+        android:fontFamily="@font/modak"
+        android:textColor="@color/liteblack"
+        android:gravity="center"
+        android:text="UI / UX"
+        android:textSize="25dp"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/frame1" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/f1"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="250dp"
+        android:src="@drawable/c_frame1"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/f2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:src="@drawable/c_frame1" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/dnce"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/dance"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

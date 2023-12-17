@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="247dp"
+        android:layout_height="240dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/simbol"
+        android:id="@+id/book1" />
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="72dp"
+        android:src="@drawable/txt_kpu"
+        android:layout_below="@+id/book1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/kuislobby"
+        />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/kuislobby"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/play_bt"/>
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:src="@drawable/decor"
+        android:layout_below="@+id/kuislobby"
+        android:layout_marginLeft="-120dp"
+        android:layout_marginTop="-25dp"
+        android:id="@+id/deco1" />
+
+
+    <ImageView
+        android:id="@+id/deco2"
+        android:layout_width="190dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/play"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginRight="-300dp"
+        android:layout_marginBottom="300dp"
+        android:src="@drawable/decor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-138dp"
+        android:fontFamily="@font/modak"
+        android:textColor="@color/grey"
+        android:textSize="32sp"
+        android:text="MULAI"
+        android:id="@+id/txtlobby1"/>
+
+
+
+
+</RelativeLayout>

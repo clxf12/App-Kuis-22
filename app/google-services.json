@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1017820809696",
+    "project_id": "kuis-22",
+    "storage_bucket": "kuis-22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017820809696:android:8d4591f8fe648b6ef88385",
+        "android_client_info": {
+          "package_name": "com.clxf12.kuis22"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdmVBz7iN11yQEWog7QZHut1YtfvFpTcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

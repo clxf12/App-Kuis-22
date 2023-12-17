@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:layout_gravity="center"
+    android:background="@drawable/bg"
+    tools:context=".DaftarActivity">
+
+    <ImageView
+        android:layout_width="118dp"
+        android:layout_height="124dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/simbol"
+        android:id="@+id/log1daf"/>
+
+    <ImageView
+        android:layout_width="306dp"
+        android:layout_height="39dp"
+        android:src="@drawable/txt_soal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/log1daf"
+        android:layout_marginTop="20dp"
+        android:id="@+id/daf1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/kol_b"
+        android:layout_below="@id/daf1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/passtxt2"/>
+
+
+    <TextView
+        android:id="@+id/SoalSedang"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/daf1"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="45dp"
+        android:autoSizeMaxTextSize="14sp"
+        android:text="Apa nama planet ketujuh dari matahari ?"
+        android:textAlignment="gravity"
+        android:textColor="@color/liteblack"
+        android:autoSizeTextType="uniform"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/daf1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="-65dp"
+        android:layout_toStartOf="@+id/SoalSedang"
+        android:text="1."
+        android:textColor="@color/liteblack"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:autoSizeTextType="uniform"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/radio_grup">
+
+        <RadioButton
+            android:id="@+id/pilihanA"
+            android:text="Pilihan A"
+            android:textColor="@color/liteblack"
+            android:buttonTint="@color/black"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/SoalSedang"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="260dp" />
+
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/pilihanA"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/pilihanB"
+            android:textColor="@color/liteblack"
+            android:buttonTint="@color/black"
+            android:text="Pilihan B"/>
+
+        <RadioButton
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/pilihanB"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/pilihanC"
+            android:textColor="@color/liteblack"
+            android:buttonTint="@color/black"
+            android:text="Pilihan C"/>
+
+        <RadioButton
+            android:id="@+id/pilihanD"
+            android:textColor="@color/liteblack"
+            android:buttonTint="@color/black"
+            android:background="@color/transparent"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/pilihanC"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:text="Pilihan D"/>
+
+
+    </RadioGroup>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ez_save"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="433dp"
+            android:src="@drawable/kol_s" />
+
+        <TextView
+            android:id="@+id/bckdafez"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="435dp"
+            android:fontFamily="@font/modak"
+            android:text="Simpan"
+            android:textColor="@color/liteblack"
+            android:textSize="26sp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/ez_back"
+            android:layout_width="166dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="490dp"
+            android:src="@drawable/kol_s" />
+
+        <TextView
+            android:id="@+id/bckdaftxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="493dp"
+            android:fontFamily="@font/modak"
+            android:text="Sebelumnya"
+            android:textColor="@color/liteblack"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ez_next"
+            android:layout_width="166dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="206dp"
+            android:layout_marginTop="490dp"
+            android:src="@drawable/kol_s" />
+
+        <TextView
+            android:id="@+id/tsvdafxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="493dp"
+            android:fontFamily="@font/modak"
+            android:textColor="@color/liteblack"
+            android:text="Selanjutnya"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

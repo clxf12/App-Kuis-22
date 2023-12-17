@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@drawable/bg"
+    tools:context=".DaftarActivity">
+
+    <ImageView
+        android:layout_width="118dp"
+        android:layout_height="124dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/simbol"
+        android:id="@+id/lvllogo"/>
+
+    <ImageView
+        android:layout_width="306dp"
+        android:layout_height="39dp"
+        android:src="@drawable/txt_level"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lvllogo"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lvltxt" />
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kol_s"
+        android:layout_below="@id/lvltxt"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/lvltxt1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvltxt"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/liteblack"
+        android:background="@color/transparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"
+        android:padding="16dp"
+        android:text="MUDAH"
+        android:textSize="24sp"
+        android:fontFamily="@font/modak"
+        android:id="@+id/mudahtx"/>
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kol_s"
+        android:layout_below="@id/lvltxt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lvltxt2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvltxt1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/liteblack"
+        android:background="@color/transparent"
+        android:text="SEDANG"
+        android:textSize="24sp"
+        android:fontFamily="@font/modak"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:padding="16dp"
+        android:id="@+id/sedangtx"/>
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kol_s"
+        android:layout_below="@id/lvltxt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lvltxt3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvltxt2"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/liteblack"
+        android:background="@color/transparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        android:padding="16dp"
+        android:fontFamily="@font/modak"
+        android:textSize="24sp"
+        android:text="SULIT"
+        android:id="@+id/sulittx"/>
+
+
+        <ImageView
+            android:id="@+id/bck_lvl"
+            android:layout_width="166dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="455dp"
+            android:src="@drawable/kol_s" />
+
+        <TextView
+            android:id="@+id/bckdaftxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="455dp"
+            android:fontFamily="@font/modak"
+            android:text="Sebelumnya"
+            android:textColor="@color/liteblack"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/sv_lvl"
+            android:layout_width="166dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="206dp"
+            android:layout_marginTop="455dp"
+            android:src="@drawable/kol_s" />
+
+        <TextView
+            android:id="@+id/tsvdafxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="455dp"
+            android:fontFamily="@font/modak"
+            android:textColor="@color/liteblack"
+            android:text="Simpan"
+            android:textSize="20sp" />
+
+
+
+</RelativeLayout>
