@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent register  = new Intent(getApplicationContext(), DaftarActivity.class);
                 startActivity(register);
-                finish();
             }
         });
 
@@ -52,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent masuk = new Intent(getApplicationContext(), MasukActivity.class);
                 startActivity(masuk);
-                finish();
             }
         });
 

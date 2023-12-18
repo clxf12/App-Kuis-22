@@ -133,6 +133,7 @@ public class Mudah extends AppCompatActivity {
                     if (nomor < Soal.length) {
                         SoalMudah.setText(Soal[nomor]);
 
+                        number.setText(num[nomor]);
                         pilihanA.setText(Pilihan[(nomor * 4) + 0]);
                         pilihanB.setText(Pilihan[(nomor * 4) + 1]);
                         pilihanC.setText(Pilihan[(nomor * 4) + 2]);

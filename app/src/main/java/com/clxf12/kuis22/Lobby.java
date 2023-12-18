@@ -36,7 +36,6 @@ public class Lobby extends AppCompatActivity {
             public void onClick(View view) {
                 Intent play = new Intent(getApplicationContext(), Level.class);
                 startActivity(play);
-                finishAndRemoveTask();
             }
         });
 

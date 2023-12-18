@@ -70,7 +70,6 @@ public class DaftarActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Berhasil Daftar :)", Toast.LENGTH_SHORT).show();
                     Intent register = new Intent(getApplicationContext(), MasukActivity.class);
                     startActivity(register);
-                    finish();
 
                 }
 
