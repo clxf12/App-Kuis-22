@@ -8,10 +8,15 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -22,11 +27,13 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MasukActivity extends AppCompatActivity {
 
-    private EditText ktxtusermsk, ktxtpasswmsk;
+    private EditText userId2, sandi2;
 
     private ImageView nxt_msk, bck_msk;
 
     private DatabaseReference database;
+
+    boolean pasShow2;
 
 
     public static String PREFS_NAME="myPrefsFile";
@@ -34,8 +41,8 @@ public class MasukActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_masuk);
-        ktxtusermsk = findViewById(R.id.ktxtusermsk);
-        ktxtpasswmsk = findViewById(R.id.ktxtpasswmsk);
+        userId2 = findViewById(R.id.ktxtusermsk);
+        sandi2 = findViewById(R.id.ktxtpasswmsk);
         nxt_msk = findViewById(R.id.nxt_msk);
         bck_msk = findViewById(R.id.bck_msk);
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
@@ -59,8 +66,8 @@ public class MasukActivity extends AppCompatActivity {
                 editor.putBoolean("hasLoggedIn",true);
                 editor.commit();
 
-                String username = ktxtusermsk.getText().toString();
-                String password = ktxtpasswmsk.getText().toString();
+                String username = userId2.getText().toString();
+                String password = sandi2.getText().toString();
 
                 database = FirebaseDatabase.getInstance().getReference("users");
 
@@ -100,6 +107,37 @@ public class MasukActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        sandi2.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                final int Right=2;
+                if(event.getAction()==MotionEvent.ACTION_UP){
+                    if(event.getRawX()>=sandi2.getRight()-sandi2.getCompoundDrawables()[Right].getBounds().width()){
+                        int selection=sandi2.getSelectionEnd();
+                        if(pasShow2){
+                            //Atur gambar drawable
+                            sandi2.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.pass_hidden,0);
+                            //Hilangkan Password
+                            sandi2.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                            pasShow2=false;
+                        }else {
+                            //Atur gambar drawable
+                            sandi2.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.pass_show,0);
+                            //Tampilkan Password
+                            sandi2.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                            pasShow2=true;
+                        }
+                        sandi2.setSelection(selection);
+                        return true;
+                    }
+                }
+
+
+                return false;
+            }
+        });
+
 
     }
 }
