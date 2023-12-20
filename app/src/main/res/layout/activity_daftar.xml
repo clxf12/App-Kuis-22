@@ -59,6 +59,8 @@
 		android:layout_marginLeft="16dp"
 		android:layout_marginTop="-5dp"
 		android:padding="16dp"
+		android:maxLength="15"
+		android:textColorHint="@color/grey"
 		android:id="@+id/ktxtnamadaf"/>
 
 	<TextView
@@ -89,6 +91,7 @@
 		android:layout_centerHorizontal="true"
 		android:textColor="@color/liteblack"
 		android:background="@color/transparent"
+		android:maxLength="9"
 		android:layout_marginLeft="15dp"
 		android:layout_marginTop="-3dp"
 		android:padding="16dp"
@@ -124,6 +127,7 @@
 		android:background="@color/transparent"
 		android:layout_marginLeft="15dp"
 		android:layout_marginTop="-3dp"
+		android:maxLength="6"
 		android:padding="16dp"
 		android:id="@+id/ktxtuserdaf"/>
 
@@ -147,19 +151,19 @@
 		android:layout_centerHorizontal="true"
 		android:id="@+id/passtxt4"/>
 
-	<EditText
-		android:layout_width="300dp"
-		android:layout_height="50dp"
-		android:layout_below="@+id/passwdaf"
-		android:background="@color/transparent"
-		android:layout_centerHorizontal="true"
-		android:textColor="@color/liteblack"
-		android:layout_marginLeft="17dp"
-		android:layout_marginTop="-5dp"
-		android:padding="15dp"
-		android:id="@+id/ktxtpassdaf" />
-
-
+		<EditText
+			android:id="@+id/ktxtpassdaf"
+			android:layout_width="270dp"
+			android:layout_height="50dp"
+			android:layout_below="@+id/passtxt4"
+			android:background="@color/transparent"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="-55dp"
+			android:inputType="textPassword"
+			android:drawableRight="@drawable/pass_hidden"
+			android:maxLength="15"
+			android:drawableTint="@color/grey"
+			android:textColor="@color/liteblack" />
 
 	<RelativeLayout
 		android:layout_width="match_parent"
