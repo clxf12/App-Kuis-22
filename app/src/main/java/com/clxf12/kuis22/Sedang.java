@@ -103,6 +103,7 @@ public class Sedang extends AppCompatActivity {
         pilihanB = findViewById(R.id.pilihanB);
         pilihanC = findViewById(R.id.pilihanC);
         pilihanD = findViewById(R.id.pilihanD);
+        number = findViewById(R.id.number);
 
         radio_grup.check(0);
 
