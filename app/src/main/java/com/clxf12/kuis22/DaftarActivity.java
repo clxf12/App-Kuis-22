@@ -36,6 +36,9 @@ public class DaftarActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+
         setContentView(R.layout.activity_daftar);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
