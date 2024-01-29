@@ -59,7 +59,7 @@ public class Level extends AppCompatActivity {
                 startActivity(lanjut);
             }
         });
-
+        //-- LEVEL MUDAH --//
         lvltxt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,7 +68,7 @@ public class Level extends AppCompatActivity {
                 finishAndRemoveTask();
             }
         });
-
+        //-- LEVEL SEDANG --//
         lvltxt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,7 +77,7 @@ public class Level extends AppCompatActivity {
                 finishAndRemoveTask();
             }
         });
-
+        //-- LEVEL SULIT --//
         lvltxt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

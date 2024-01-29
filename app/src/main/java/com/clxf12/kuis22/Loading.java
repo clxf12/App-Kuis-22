@@ -25,7 +25,7 @@ public class Loading extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                SharedPreferences sharedPreferences= getSharedPreferences(MasukActivity.PREFS_NAME,0);
+                SharedPreferences sharedPreferences= getSharedPreferences(Lobby.PREFS_NAME,0);
                 boolean hasLoggedIn= sharedPreferences.getBoolean("hasLoggedIn",false);
 
                 if(hasLoggedIn){
@@ -34,7 +34,7 @@ public class Loading extends AppCompatActivity {
                     finish();
                 }
                 else {
-                    Intent intent= new Intent(Loading.this,MainActivity.class);
+                    Intent intent= new Intent(Loading.this,Lobby.class);
                     startActivity(intent);
                     finish();
                 }
@@ -53,7 +53,7 @@ public class Loading extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Loading.this, MainActivity.class));
+                startActivity(new Intent(Loading.this, Lobby.class));
                 finish();
             }
         }, 3000);

@@ -25,7 +25,7 @@ public class Mudah extends AppCompatActivity {
     int benar = 0, salah = 0;
     int score;
 
-
+    //-- INPUT SOAL MUDAH --//
     String Soal[]= new String[]{
             "Siapakah Presiden Indonesia yang kedua ?",
             "Apa ibukota Jawa Tengah ?",
@@ -38,7 +38,7 @@ public class Mudah extends AppCompatActivity {
             "Layar Komputer disebut juga ?",
             "Apa ibu Kota Papua Barat ?"
     };
-
+    //-- PILIHAN JAWABAN --//
     String Pilihan[]= new String[]{
             "Soeharto", "Megawati", "Joko Widodo", "B. J. Habibie",
             "Jakarta", "Ambon", "Semarang", "Surabaya",
@@ -51,7 +51,7 @@ public class Mudah extends AppCompatActivity {
             "Mouse", "Print", "Monitor", "Kursor",
             "Kaimana", "Sorong", "Fak-fak", "Manokwari"
     };
-
+    //-- JAWABAN BENAR --//
     String Benar[]= new String[]{
             "Soeharto",
             "Semarang",

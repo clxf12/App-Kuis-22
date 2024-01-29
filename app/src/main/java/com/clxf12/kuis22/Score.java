@@ -72,7 +72,7 @@ public class Score extends AppCompatActivity {
                 finish();
             }
         });
-// secret button
+
         x.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -133,11 +133,11 @@
             android:id="@+id/tsvdafxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="260dp"
+            android:layout_marginLeft="232dp"
             android:layout_marginTop="455dp"
             android:fontFamily="@font/modak"
             android:textColor="@color/liteblack"
-            android:text="Simpan"
+            android:text="Selanjutnya"
             android:textSize="20sp" />
 
 
