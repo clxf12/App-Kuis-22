@@ -95,7 +95,7 @@
         android:textSize="26sp"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
-        android:layout_below="@id/passtxt1"/>
+        android:layout_below="@id/soal_baru"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -114,10 +114,10 @@
             android:id="@+id/bckdafscr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="47dp"
+            android:layout_marginLeft="78dp"
             android:layout_marginTop="493dp"
             android:fontFamily="@font/modak"
-            android:text="Sebelumnya"
+            android:text="Home"
             android:textColor="@color/liteblack"
             android:textSize="20sp" />
 

@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 public class Sulit extends AppCompatActivity {
 
-    private ImageView ez_next, ez_back, ez_save;
+    private ImageView ez_next, ez_back;
     private TextView SoalSulit, number;
     private RadioGroup radio_grup;
     private RadioButton pilihanA, pilihanB, pilihanC, pilihanD;
@@ -95,7 +95,6 @@ public class Sulit extends AppCompatActivity {
 
         ez_next = findViewById(R.id.ez_next);
         ez_back = findViewById(R.id.ez_back);
-        ez_save = findViewById(R.id.ez_save);
         SoalSulit = findViewById(R.id.SoalSulit);
         radio_grup = findViewById(R.id.radio_grup);
         pilihanA = findViewById(R.id.pilihanA);
@@ -165,13 +164,6 @@ public class Sulit extends AppCompatActivity {
                     pilihanD.setText(Pilihan[(nomor / 4) + 3]);
 
                 }
-            }
-        });
-
-        ez_save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Jawaban Tersimpan", Toast.LENGTH_SHORT).show();
             }
         });
 

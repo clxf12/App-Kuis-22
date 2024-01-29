@@ -22,25 +22,6 @@ public class Loading extends AppCompatActivity {
         setContentView(R.layout.activity_loading);
         Toast.makeText(getApplicationContext(), "Selamat Datang", Toast.LENGTH_LONG).show();
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                SharedPreferences sharedPreferences= getSharedPreferences(Lobby.PREFS_NAME,0);
-                boolean hasLoggedIn= sharedPreferences.getBoolean("hasLoggedIn",false);
-
-                if(hasLoggedIn){
-                    Intent intent =new Intent(Loading.this,Lobby.class);
-                    startActivity(intent);
-                    finish();
-                }
-                else {
-                    Intent intent= new Intent(Loading.this,Lobby.class);
-                    startActivity(intent);
-                    finish();
-                }
-            }
-        },SPLASH_TIME_OUT);
-
         if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
             getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
